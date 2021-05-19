@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hungry Monster</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ================ Navbar Area ================ -->
+    <header class="container">
+      <div class="header-style mt-3">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand nav-logo" href="#">
+              <img src="images/logo.svg" alt="" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div id="navbar-font" class="navbar-nav ms-auto">
+                <a class="nav-link ms-3 me-3" href="#">Home</a>
+                <a class="nav-link ms-3 me-3" href="#">About</a>
+                <a class="nav-link ms-3 me-3" href="#">Recipes</a>
+                <a class="nav-link ms-3 me-3" href="#">Blog</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <!-- ================ Search Bar Area ================ -->
+      <section class="mt-5 mb-5">
+        <form class="col-md-6 mx-auto">
+          <div class="input-group">
+            <input
+              id="meal-input"
+              type="text"
+              class="form-control bg-light"
+              placeholder="Search for Meal..."
+              aria-label="Search"
+            />
+            <div class="input-group-append">
+              <button id="meal-submit" class="btn" type="button">Search</button>
+            </div>
+          </div>
+        </form>
+        <h4 id="no-meal-found" class="text-center mt-5"></h4>
+      </section>
+
+      <!-- ================ Meal Details Area ================ -->
+      <section
+        id="meal-details-section"
+        class="row my-5 d-flex justify-content-center p-3"
+      ></section>
+
+      <!-- ================ Searched Meal Result Area ================ -->
+      <section id="meal-info-section" class="row"></section>
+    </main>
+
+    <!-- ================ External JS ================ -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
